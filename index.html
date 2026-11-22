@@ -19,83 +19,93 @@
 <body>
 <main>
 <h1>Comica Privacy Policy</h1>
-<p class="muted">Effective date: 2026-10-10</p>
+<p class="muted">Comica for Android, including Google Play test versions · Effective <time datetime="2026-11-22">22 November 2026</time></p>
 
-<p>Comica is a reader for comic and manga files you already own. It is built so that your comics, reading history and searches stay on your device.</p>
+<p>Comica is a reader for comic and manga files you already own. Reading history and search data are stored in the app on your device.</p>
 
 <h2>Information we collect</h2>
-<p>We, the developer, do not collect anything. Comica has no account system, no advertising, no analytics of its own and no crash-reporting service, and we run no servers that receive your data. We never sell or share personal data.</p>
+<p>Comica has no account system, advertising, developer-operated analytics or crash-reporting service. The developer does not operate servers that receive app usage data or sell personal data. The sections below explain how Google services, earlier versions of the app and optional feedback handle data.</p>
 
 <h2>Google ML Kit diagnostics</h2>
-<p>Comica recognises text in speech balloons and translates scene searches with Google ML Kit, which runs on your device. Your pages, recognised text and search terms are not sent to Google. ML Kit itself sends Google limited technical information for diagnostics and usage analytics: device model and Android version, the app's package name and version, per-installation identifiers, performance figures such as processing time, error codes and, for translation, the language pair. This is sent encrypted (HTTPS) and is handled under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>; see <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit's data disclosure</a> for details.</p>
+<p>Comica uses Google ML Kit on your device to recognise text, translate scene searches and provide basic dialogue translation where available. Your pages, recognised text and search terms are not sent to Google. ML Kit sends Google technical information for diagnostics and usage analytics, including device and app information, device or installation identifiers, feature events, processing times, error codes and the languages used for translation. This is sent over HTTPS and handled under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. See <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit's data disclosure</a> for details.</p>
+
+<h2>Advanced translation and Translation Studio</h2>
+<p>On supported devices, Comica downloads the advanced model from Google Play and runs it on your device. Comic pages, recognised dialogue and translations stay on your device during translation. Studio projects and edits are stored in the app's private storage. Exported ZIPs go to the location you choose and can be deleted there separately. You can delete a project in Studio and remove the advanced model in Settings.</p>
 
 <h2>Data stored on your device</h2>
 <ul>
   <li>Reading progress, bookmarks, per-book settings and app preferences.</li>
   <li>Cover thumbnails and a cache of files you open from a network folder.</li>
-  <li>A search index of your comics: the text recognised in speech balloons and numeric descriptions of each page, used for scene and dialogue search, Similar Scenes and the library's recommendation rows. It is built and used entirely on your device and never uploaded.</li>
-  <li>Recent search terms.</li>
-  <li>Network folder (SMB) addresses and the user name and password you enter. These are stored only in the app's private storage on your device and are sent only to the server you configured.</li>
+  <li>A search index of your comics: the text recognised in speech balloons and numeric descriptions of each page, used for scene and dialogue search, Similar Scenes and the library's recommendation rows. Comica builds and uses the index on your device.</li>
+  <li>Recent searches and the search terms recorded against the daily free limit. You can clear the recent searches on the Search screen.</li>
+  <li>Network folder (SMB) addresses and the user name and password you enter. Comica stores them in the app's private storage and uses them to connect to the server you choose. Saved network folder credentials are excluded from Android backup and device transfer.</li>
 </ul>
-<p>Uninstalling Comica or clearing its storage removes all of this data.</p>
+<p>Uninstalling Comica or clearing its storage removes the app's local data. Files saved outside the app, including exported ZIPs, can be deleted at their destination. Android's system backup and device transfer can include eligible data such as reading progress, app settings and comics imported into Comica's library using Wi-Fi Transfer. You can manage system backups in Android settings.</p>
+<p>Translation Studio projects, the advanced model and cached translations are excluded from Android backup and device transfer. Comica also excludes the search index, recent searches and daily search usage starting with the updated backup rules. Older versions could include this search data in Android backups. Your purchase can be restored through Google Play using the account that purchased it.</p>
 
 <h2>Files and permissions</h2>
 <ul>
-  <li><strong>Folders you choose</strong>: Comica reads only the folders you select in the system folder picker. You can remove a folder in Settings at any time.</li>
-  <li><strong>Network</strong>: used to connect to network folders (SMB) you add yourself, and for Wi-Fi Transfer, which runs a small web server on your device that only computers on your own network can reach while it is open.</li>
-  <li><strong>Weather (optional, off by default)</strong>: if you turn on "Match the Weather" in Settings, Comica asks for approximate location permission, rounds your location to about 10 km, and sends only those two numbers to Open-Meteo (open-meteo.com) at most once an hour while the app is open, to learn whether it's clear, cloudy, raining or snowing. We don't keep the location, and turning the setting off stops it.</li>
-  <li><strong>Downloads</strong>: the on-device search model is delivered by Google Play together with the app. When you search for scenes in Korean, Japanese or Chinese, a translation language model is downloaded once from Google; translation itself then happens on your device.</li>
-  <li><strong>Purchase</strong>: Comica is sold through Google Play. Payment is handled by Google; we receive no payment details.</li>
+  <li><strong>Files and folders you choose</strong>. The Android picker grants Comica access to the folder you select or, in versions with individual file selection, the file you select. You can remove a source in Settings at any time. Removing a selected comic file releases access and leaves the original file in place.</li>
+  <li><strong>Network</strong>. Comica connects directly to the network folders (SMB) you add. Wi-Fi Transfer uses an HTTP page served from your device. While Wi-Fi Transfer is open, other devices that can reach that page can see library information and send files.</li>
+  <li><strong>Library effects</strong>. Versions with the Library Effects setting draw the selected effect without using location or requesting weather data. If you enable Match the Weather in an earlier version and grant approximate location permission, the app sends coordinates rounded to about 10 km to Open-Meteo over HTTPS. The app keeps no copy of those coordinates. Turning the setting off stops requests. <a href="https://open-meteo.com/en/terms#privacy">Open-Meteo's privacy notice</a> says its API may log IP addresses and coordinates for troubleshooting and deletes those logs after 90 days.</li>
+  <li><strong>Downloads</strong>. Google Play delivers the on-device search model with the app. ML Kit may download language models when needed for basic translation.</li>
+  <li><strong>Purchase</strong>. Comica is free to install. Google Play processes the optional one-time purchase. The developer does not receive your payment card details.</li>
 </ul>
 
 <h2>Children</h2>
 <p>Comica is not directed at children and we do not knowingly collect information from anyone, including children.</p>
 
 <h2>Changes</h2>
-<p>If this policy changes, the new version will be published at this address with a new effective date.</p>
+<p>If this policy changes, the updated version will be published at this address.</p>
 
 <h2>Contact</h2>
+<p>If you send feedback by email, the developer keeps the correspondence in the support inbox to reply, investigate and follow up. Comica prepares an editable report with the app version, Android version and device model. A report from Translation Studio can also include the Studio page number. Comica does not send the report automatically. Use the address below to ask about the handling or deletion of messages you sent.</p>
 <p><a href="mailto:guru1013@gmail.com">guru1013@gmail.com</a></p>
 
 <hr>
 
 <div lang="ko">
 <h1>Comica 개인정보 처리방침</h1>
-<p class="muted">시행일: 2026-10-10</p>
-<p>Comica는 이미 가지고 있는 만화 파일을 읽는 앱이에요. 만화, 읽은 기록, 검색 내용은 모두 기기 안에만 남도록 만들었어요.</p>
+<p class="muted">Google Play 테스트 버전을 포함한 Android용 Comica · <time datetime="2026-11-22">2026년 11월 22일</time> 시행</p>
+<p>Comica는 이미 가지고 있는 만화 파일을 읽는 앱이에요. 읽은 기록과 검색 데이터는 기기의 앱 저장공간에 보관해요.</p>
 
 <h2>수집하는 정보</h2>
-<p>개발자는 아무 정보도 모으지 않아요. 계정, 광고, 자체 분석 도구, 오류 보고 서비스가 없고, 사용자 정보를 받는 서버도 운영하지 않아요. 개인정보를 팔거나 다른 곳에 넘기지 않아요.</p>
+<p>Comica에는 계정, 광고, 개발자가 운영하는 분석 도구나 오류 보고 서비스가 없어요. 개발자는 앱 사용 데이터를 받는 서버를 운영하거나 개인정보를 판매하지 않아요. Google 서비스, 이전 버전의 앱, 사용자가 보내는 의견과 관련된 데이터 처리는 아래에서 설명해요.</p>
 
 <h2>Google ML Kit 진단 정보</h2>
-<p>말풍선 글자 인식과 장면 검색어 번역에는 기기 안에서 돌아가는 Google ML Kit를 써요. 만화 페이지, 인식한 글자, 검색어는 Google로 보내지 않아요. 다만 ML Kit 자체가 오류 확인과 사용 통계를 위해 기기 모델과 Android 버전, 앱 이름과 버전, 설치별 식별값, 처리 시간 같은 성능 수치, 오류 코드, 번역 언어 조합 같은 기술 정보를 Google에 보내요. 암호화(HTTPS)해서 보내며 <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>에 따라 처리돼요. 자세한 내용은 <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit 데이터 공개</a>에서 볼 수 있어요.</p>
+<p>글자 인식, 장면 검색어 번역, 지원 버전의 기본 대사 번역에는 기기에서 실행되는 Google ML Kit를 써요. 만화 페이지, 인식한 글자, 검색어는 Google로 보내지 않아요. ML Kit는 오류 확인과 사용 통계를 위해 기기 및 앱 정보, 기기 또는 설치 식별값, 기능 사용 이벤트, 처리 시간, 오류 코드, 번역에 사용된 언어 등의 기술 정보를 Google에 보내요. 이 정보는 HTTPS로 전송되며 <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>에 따라 처리돼요. 자세한 내용은 <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit 데이터 공개</a>에서 볼 수 있어요.</p>
+
+<h2>고급 번역과 번역 스튜디오</h2>
+<p>지원 기기에서는 Google Play에서 고급 번역 모델을 내려받아 기기에서 실행해요. 번역하는 동안 만화 페이지, 인식한 대사, 번역 결과는 기기에서 처리해요. 스튜디오 프로젝트와 수정 내용은 앱 전용 저장공간에 보관해요. 내보낸 ZIP은 사용자가 고른 위치에 저장되며 그 위치에서 별도로 삭제할 수 있어요. 프로젝트는 스튜디오에서, 고급 번역 모델은 설정에서 삭제할 수 있어요.</p>
 
 <h2>기기에 저장되는 정보</h2>
 <ul>
   <li>읽은 위치, 책갈피, 책별 설정, 앱 설정</li>
   <li>표지 썸네일과 네트워크 폴더에서 연 파일의 임시 사본</li>
-  <li>만화 검색용 색인: 말풍선에서 읽은 글자와 각 페이지를 숫자로 나타낸 값이에요. 장면·대사 검색, 비슷한 장면, 추천 줄에 쓰이며, 기기 안에서만 만들고 쓰고 밖으로 보내지 않아요.</li>
-  <li>최근 검색어</li>
-  <li>직접 입력한 네트워크 폴더(SMB) 주소, 사용자 이름, 비밀번호. 앱 전용 저장공간에만 보관하고, 지정한 서버로만 보내요.</li>
+  <li>만화 검색용 색인: 말풍선에서 읽은 글자와 각 페이지를 숫자로 나타낸 값이에요. 장면·대사 검색, 비슷한 장면, 추천 줄에 쓰이며, Comica가 기기에서 만들고 사용해요.</li>
+  <li>최근 검색어와 하루 무료 검색 횟수를 계산하기 위해 기록하는 검색어. 검색 화면에서 최근 검색어를 지울 수 있어요.</li>
+  <li>직접 입력한 네트워크 폴더(SMB) 주소, 사용자 이름, 비밀번호. 앱 전용 저장공간에 보관하고 지정한 서버에 연결할 때 써요. 저장된 네트워크 폴더 로그인 정보는 Android 백업과 기기 간 전송에서 제외돼요.</li>
 </ul>
-<p>앱을 지우거나 앱 저장공간을 비우면 모두 지워져요.</p>
+<p>앱을 지우거나 앱 저장공간을 비우면 기기에 저장된 앱 데이터가 지워져요. 내보낸 ZIP처럼 앱 밖에 저장한 파일은 저장한 위치에서 지울 수 있어요. Android 시스템 백업과 기기 간 전송에는 읽은 위치, 앱 설정, Wi-Fi 전송으로 Comica 보관함에 가져온 만화 등 대상 데이터가 포함될 수 있어요. 시스템 백업은 Android 설정에서 관리할 수 있어요.</p>
+<p>번역 스튜디오 프로젝트, 고급 번역 모델, 임시 번역 데이터는 Android 백업과 기기 간 전송에서 제외돼요. 백업 규칙을 업데이트한 버전부터는 만화 검색용 색인, 최근 검색어, 하루 검색 횟수 기록도 제외돼요. 이전 버전의 Android 백업에는 이 검색 데이터가 포함될 수 있어요. 구매는 결제에 사용한 계정으로 Google Play에서 복원할 수 있어요.</p>
 
 <h2>파일과 권한</h2>
 <ul>
-  <li><strong>고른 폴더</strong>: 시스템 폴더 선택 화면에서 고른 폴더만 읽어요. 설정에서 언제든 뺄 수 있어요.</li>
-  <li><strong>네트워크</strong>: 직접 추가한 네트워크 폴더(SMB)에 연결할 때와 Wi-Fi 전송을 켰을 때 써요. Wi-Fi 전송은 켜 둔 동안만 같은 공유기에 연결된 컴퓨터에서 접속할 수 있어요.</li>
-  <li><strong>날씨 (선택, 기본은 꺼짐)</strong>: 설정에서 '날씨에 맞춘 분위기'를 켜면 대략적인 위치 권한을 요청해요. 위치를 약 10km 단위로 뭉뚱그린 숫자 두 개만 Open-Meteo(open-meteo.com)에 보내고, 앱을 쓰는 동안 1시간에 한 번까지만 맑음·흐림·비·눈 여부를 받아와요. 위치는 저장하지 않으며, 설정을 끄면 바로 멈춰요.</li>
-  <li><strong>다운로드</strong>: 기기 안에서 쓰는 검색 모델은 Google Play가 앱과 함께 보내 줘요. 한국어·일본어·중국어로 장면을 검색하면 번역용 언어 모델을 Google에서 한 번 내려받고, 번역은 기기 안에서 해요.</li>
-  <li><strong>구매</strong>: Comica는 Google Play에서 판매해요. 결제는 Google이 처리하며, 개발자는 결제 정보를 받지 않아요.</li>
+  <li><strong>고른 파일과 폴더</strong>. Android 선택 화면에서 고른 폴더에 접근할 수 있어요. 개별 파일 선택을 지원하는 버전에서는 고른 파일에도 접근할 수 있어요. 설정에서 언제든 선택을 해제할 수 있어요. 만화 파일을 보관함에서 빼면 접근 권한을 해제하며, 원본 파일은 그대로 남아요.</li>
+  <li><strong>네트워크</strong>. 직접 추가한 네트워크 폴더(SMB)에 연결해요. Wi-Fi 전송은 기기에서 HTTP 페이지를 열어요. Wi-Fi 전송을 켜 둔 동안 해당 페이지에 접속할 수 있는 다른 기기는 보관함 정보를 보고 파일을 보낼 수 있어요.</li>
+  <li><strong>보관함 배경 효과</strong>. ‘보관함 배경 효과’ 설정이 있는 버전은 위치를 사용하거나 날씨 정보를 요청하지 않고 선택한 효과를 기기에서 표시해요. 이전 버전에서 ‘날씨에 맞춘 분위기’를 켜고 대략적인 위치 권한을 허용하면, 앱이 약 10km 단위로 반올림한 좌표를 HTTPS로 Open-Meteo에 보내요. 앱은 좌표를 저장하지 않으며 이 설정을 끄면 요청이 멈춰요. <a href="https://open-meteo.com/en/terms#privacy">Open-Meteo 개인정보 처리 안내</a>에 따르면 문제 해결용 API 로그에 IP 주소와 좌표가 포함될 수 있고, 이 로그는 90일 뒤 삭제돼요.</li>
+  <li><strong>다운로드</strong>. 기기에서 쓰는 검색 모델은 Google Play가 앱과 함께 제공해요. ML Kit는 기본 번역에 필요한 언어 모델을 내려받을 수 있어요.</li>
+  <li><strong>구매</strong>. Comica는 무료로 설치할 수 있어요. 선택 사항인 일회성 구매는 Google Play가 처리해요. 개발자에게는 결제 카드 정보가 전달되지 않아요.</li>
 </ul>
 
 <h2>어린이</h2>
 <p>Comica는 어린이를 대상으로 한 앱이 아니며, 어린이를 포함해 누구의 정보도 일부러 모으지 않아요.</p>
 
 <h2>변경</h2>
-<p>이 방침이 바뀌면 같은 주소에 새 시행일과 함께 올려요.</p>
+<p>이 방침이 바뀌면 같은 주소에 갱신된 내용을 올려요.</p>
 
 <h2>문의</h2>
+<p>이메일로 의견을 보내면 개발자는 답장과 문제 확인, 후속 대응을 위해 주고받은 메일을 지원 메일함에 보관해요. Comica는 앱 버전, Android 버전, 기기 모델을 담은 편집 가능한 제보 내용을 준비해요. 번역 스튜디오에서 제보하는 경우 현재 쪽 번호도 포함될 수 있어요. Comica가 제보 내용을 자동으로 보내지는 않아요. 보낸 메시지의 처리나 삭제에 관해서는 아래 주소로 문의할 수 있어요.</p>
 <p><a href="mailto:guru1013@gmail.com">guru1013@gmail.com</a></p>
 </div>
 </main>
